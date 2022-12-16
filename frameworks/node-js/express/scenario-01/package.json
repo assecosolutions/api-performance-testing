@@ -1,0 +1,24 @@
+{
+  "name": "expressjs-scenario-01",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/assecosolutions/api-performance-testing.git"
+  },
+  "keywords": [
+    "sample"
+  ],
+  "author": "jarmee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/assecosolutions/api-performance-testing/issues"
+  },
+  "homepage": "https://github.com/assecosolutions/api-performance-testing#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
