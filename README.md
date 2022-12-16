@@ -13,7 +13,7 @@ The following frameworks will be considered within the load test:
 - [express](https://expressjs.com/de/)
 - [Nest.js (express)](https://nestjs.com/)
 
-### Scenarios
+### 🌄 Scenarios
 
 We will provide different scenarios of complexity from simple to very complex which will be implemented by every framework. The scenarios are described below.
 
