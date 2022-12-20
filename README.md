@@ -12,6 +12,7 @@ The following frameworks will be considered within the load test:
 
 - [express](https://expressjs.com/de/)
 - [Nest.js (express)](https://nestjs.com/)
+- [Nest.js (fastify)](https://nestjs.com/)
 
 ### 🌄 Scenarios
 
