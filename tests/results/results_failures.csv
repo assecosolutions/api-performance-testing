@@ -1,2 +1,2 @@
 Method,Name,Error,Occurrences
-GET,NodeJSNestJsScenario01,"""ConnectionRefusedError(111, 'Connection refused')""",3
+GET,NodeJSNestJsScenario01,"""ConnectionRefusedError(111, 'Connection refused')""",10

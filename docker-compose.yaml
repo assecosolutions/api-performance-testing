@@ -37,5 +37,15 @@ services:
       - ./frameworks/node-js/nestjs-express/scenario-01:/home/node/app
     networks:
       - afpt
+  afpt-node-js-nestjs-fastify-scenario-01:
+    image: node:latest
+    working_dir: /home/node/app
+    environment:
+      - NODE_ENV=production
+    command: "npm start"
+    volumes:
+      - ./frameworks/node-js/nestjs-fastify/scenario-01:/home/node/app
+    networks:
+      - afpt
 networks:
   afpt:

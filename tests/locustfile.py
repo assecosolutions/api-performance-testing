@@ -19,3 +19,11 @@ class NodeJSNestJsExpressScenario01(HttpUser):
     @task
     def hello(self):
         self.client.get("/api/hello?name=Armen", name="NodeJSNestJsScenario01")
+
+class NodeJSNestJsFastifyScenario01(HttpUser):
+    host = 'http://afpt-node-js-nestjs-fastify-scenario-01'
+    wait_time = between(2, 4)
+
+    @task
+    def hello(self):
+        self.client.get("/api/hello?name=Armen", name="NodeJSNestJsFasitfyScenario01")
