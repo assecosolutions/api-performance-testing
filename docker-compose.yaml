@@ -6,8 +6,8 @@ services:
       - "8089:8089"
     volumes:
       - ./tests:/mnt/locust
-    #command: -f /mnt/locust/locustfile.py --master
-    command: -f /mnt/locust/locustfile.py --csv=/mnt/locust/results/results --headless -t30s -u 2 --master
+    # command: -f /mnt/locust/locustfile.py --master
+    command: -f /mnt/locust/locustfile.py --csv=/mnt/locust/results/results --headless -t30s -u 3 --master
     networks:
       - afpt
   afpt-locust-worker:
