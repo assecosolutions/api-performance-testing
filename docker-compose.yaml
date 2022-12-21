@@ -6,8 +6,8 @@ services:
       - "8089:8089"
     volumes:
       - ./tests:/mnt/locust
-    #command: -f /mnt/locust/locustfile.py --master
-    command: -f /mnt/locust/locustfile.py --csv=/mnt/locust/results/results --headless -t30s -u 2 --master
+    # command: -f /mnt/locust/locustfile.py --master
+    command: -f /mnt/locust/locustfile.py --csv=/mnt/locust/results/results --headless -t30s -u 3 --master
     networks:
       - afpt
   afpt-locust-worker:
@@ -35,6 +35,16 @@ services:
     command: "npm start"
     volumes:
       - ./frameworks/node-js/nestjs-express/scenario-01:/home/node/app
+    networks:
+      - afpt
+  afpt-node-js-nestjs-fastify-scenario-01:
+    image: node:latest
+    working_dir: /home/node/app
+    environment:
+      - NODE_ENV=production
+    command: "npm start"
+    volumes:
+      - ./frameworks/node-js/nestjs-fastify/scenario-01:/home/node/app
     networks:
       - afpt
 networks:
