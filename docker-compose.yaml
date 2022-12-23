@@ -6,8 +6,8 @@ services:
       - "8089:8089"
     volumes:
       - ./tests:/mnt/locust
-    # command: -f /mnt/locust/locustfile.py --master
-    command: -f /mnt/locust/locustfile.py --csv=/mnt/locust/results/results --headless -t30s -u 3 --master
+#    command: -f /mnt/locust/locustfile.py --master
+    command: -f /mnt/locust/locustfile.py --csv=/mnt/locust/results/results --headless -t30s -u 4 --master
     networks:
       - afpt
   afpt-locust-worker:
@@ -45,6 +45,18 @@ services:
     command: "npm start"
     volumes:
       - ./frameworks/node-js/nestjs-fastify/scenario-01:/home/node/app
+    networks:
+      - afpt
+  afpt-rust-rocket-scenario-01:
+    image: rust:latest
+    working_dir: /home/rust/app
+    environment:
+      - ROCKET_ENV=production
+      - ROCKET_PORT=80
+      - ROCKET_ADDRESS=0.0.0.0
+    command: "cargo run --release"
+    volumes:
+      - ./frameworks/rust/rocket/scenario-01:/home/rust/app
     networks:
       - afpt
 networks:

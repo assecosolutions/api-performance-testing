@@ -27,3 +27,11 @@ class NodeJSNestJsFastifyScenario01(HttpUser):
     @task
     def hello(self):
         self.client.get("/api/hello?name=Armen", name="NodeJSNestJsFasitfyScenario01")
+        
+class RustRocketScenario01(HttpUser):
+    host = 'http://afpt-rust-rocket-scenario-01'
+    wait_time = between(2, 4)
+
+    @task
+    def hello(self):
+        self.client.get("/api/hello?name=Armen", name="RustRocketScenario01")
