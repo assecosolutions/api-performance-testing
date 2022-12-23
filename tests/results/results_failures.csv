@@ -1,4 +1,5 @@
 Method,Name,Error,Occurrences
-GET,NodeJSExpressScenario01,"""ConnectionRefusedError(111, 'Connection refused')""",1
-GET,NodeJSNestJsFasitfyScenario01,"""ConnectionRefusedError(111, 'Connection refused')""",9
-GET,NodeJSNestJsScenario01,"""ConnectionRefusedError(111, 'Connection refused')""",11
+GET,NodeJSNestJsFasitfyScenario01,"""ConnectionRefusedError(111, 'Connection refused')""",8
+GET,NodeJSNestJsScenario01,"""ConnectionRefusedError(111, 'Connection refused')""",8
+GET,RustRocketScenario01,"""gaierror(-2, 'Name or service not known')""",1
+GET,RustRocketScenario01,"""gaierror(-5, 'No address associated with hostname')""",5
